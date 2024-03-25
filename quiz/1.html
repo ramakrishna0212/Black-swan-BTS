@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trebuchet+MS|Tahoma|sans-serif">
+   <title>Quiz-1</title>
+   <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHAgtWYhJZTXf0BtZg2MDQd_w9BczgzpCIETVn_r63Vg&s">
+   <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+   <div class="loading-screen">
+      <div class="spinner"></div><br>
+      <spans style="color: white;">Wait 10 sec quiz is loading....</span>
+   </div>
+   <div id="content">
+
+   <section id="section1">
+      <div class="ready">
+         <jk>ARE YOU READY</jk>
+         <a href="#section2"><button class="button1">YES</button></a>
+      </div>
+   </section>
+
+   <section id="section2">
+      <div class="box">
+         <div class="content">
+            <h5>ENTER QUIZ PIN</h5>
+            <input id="pin" type="text" placeholder="quiz pin" autocomplete="off">
+            <button class="button2" onclick="verify()">SUBMIT</button>
+         </div>
+      </div>
+   </section>
+
+    <script>
+        setTimeout(function() {
+        document.getElementById('content').style.display = 'block';
+        document.getElementsByClassName('loading-screen')[0].style.display = 'none';
+        }, 10000); 
+    </script>
+   <script src="quiz.js"></script>
+</body>
+</html>

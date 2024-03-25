@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BTS Quiz</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<style>
+  html{
+    overflow: scroll;
+  }
+</style>
+<body>
+  <h1>BTS Quiz</h1>
+  <form id="quiz-form">
+    <ol>
+      <li>
+        <p>1. Who is the oldest member of BTS?</p>
+        <label>
+          <input type="radio" name="q1" value="a"> a) Jin
+        </label><br>
+        <label>
+          <input type="radio" name="q1" value="b"> b) Suga
+        </label><br>
+        <label>
+          <input type="radio" name="q1" value="c"> c) RM
+        </label><br>
+        <label>
+          <input type="radio" name="q1" value="d"> d) J-Hope
+        </label>
+      </li>
+      <li>
+        <p>2. Which member of BTS is known for his eye smile?</p>
+        <label>
+          <input type="radio" name="q2" value="a"> a) Jungkook
+        </label><br>
+        <label>
+          <input type="radio" name="q2" value="b"> b) V
+        </label><br>
+        <label>
+          <input type="radio" name="q2" value="c"> c) Jimin
+        </label><br>
+        <label>
+          <input type="radio" name="q2" value="d"> d) Jin
+        </label>
+      </li>
+      <li>
+        <p>3. What is the name of BTS's fandom?</p>
+        <label>
+          <input type="radio" name="q3" value="a"> a) ARMY
+        </label><br>
+        <label>
+          <input type="radio" name="q3" value="b"> b) Blink
+        </label><br>
+        <label>
+          <input type="radio" name="q3" value="c"> c) EXO-L
+        </label><br>
+        <label>
+          <input type="radio" name="q3" value="d"> d) Once
+        </label>
+      </li>
+      <li>
+        <p>4. What is the title of BTS's debut single?</p>
+        <label>
+          <input type="radio" name="q4" value="a"> a) No More Dream
+        </label><br>
+        <label>
+          <input type="radio" name="q4" value="b"> b) Boy In Luv
+        </label><br>
+        <label>
+          <input type="radio" name="q4" value="c"> c) DNA
+        </label><br>
+        <label>
+          <input type="radio" name="q4" value="d"> d) Blood Sweat & Tears
+        </label>
+      </li>
+      <li>
+        <p>5. Which member of BTS is the main vocalist?</p>
+        <label>
+          <input type="radio" name="q5" value="a"> a) Jin
+        </label><br>
+        <label>
+          <input type="radio" name="q5" value="b"> b) RM
+        </label><br>
+        <label>
+          <input type="radio" name="q5" value="c"> c) V
+        </label><br>
+        <label>
+          <input type="radio" name="q5" value="d"> d) Jungkook
+        </label>
+      </li>
+      <li>
+        <p>6. Who is the leader of BTS?</p>
+        <label>
+          <input type="radio" name="q6" value="a"> a) RM
+        </label><br>
+        <label>
+          <input type="radio" name="q6" value="b"> b) Jin
+        </label><br>
+        <label>
+          <input type="radio" name="q6" value="c"> c) Suga
+        </label><br>
+        <label>
+          <input type="radio" name="q6" value="d"> d) J-Hope
+        </label>
+      </li>
+            <li>
+                <p>7. Which BTS member is known for his deep voice and rap skills?</p>
+                <label>
+                  <input type="radio" name="q7" value="a"> a) Jin
+                </label><br>
+                <label>
+                  <input type="radio" name="q7" value="b"> b) V
+                </label><br>
+                <label>
+                  <input type="radio" name="q7" value="c"> c) J-Hope
+                </label><br>
+                <label>
+                  <input type="radio" name="q7" value="d"> d) Suga
+                </label>
+              </li>
+              <li>
+                <p>8. Which BTS member is the lead dancer?</p>
+                <label>
+                  <input type="radio" name="q8" value="a"> a) Jimin
+                </label><br>
+                <label>
+                  <input type="radio" name="q8" value="b"> b) Jungkook
+                </label><br>
+                <label>
+                  <input type="radio" name="q8" value="c"> c) V
+                </label><br>
+                <label>
+                  <input type="radio" name="q8" value="d"> d) J-Hope
+                </label>
+              </li>
+              <li>
+                <p>9. What is the name of BTS's first English-language single?</p>
+                <label>
+                  <input type="radio" name="q9" value="a"> a) Dynamite
+                </label><br>
+                <label>
+                  <input type="radio" name="q9" value="b"> b) Butter
+                </label><br>
+                <label>
+                  <input type="radio" name="q9" value="c"> c) Permission to Dance
+                </label><br>
+                <label>
+                  <input type="radio" name="q9" value="d"> d) DNA
+                </label>
+              </li>
+            <li>
+                <p>10. What is the name of BTS's first full-length album?</p>
+                <label>
+                <input type="radio" name="q10" value="a"> a) Dark & Wild
+                </label><br>
+                <label>
+                <input type="radio" name="q10" value="b"> b) Love Yourself: Tear
+                </label><br>
+                <label>
+                <input type="radio" name="q10" value="c"> c) Wings
+                </label><br>
+                <label>
+                <input type="radio" name="q10" value="d"> d) Map of the Soul: 7
+                </label>
+            </li> 
+          
+    </ol> 
+        <div id="result" style="display: none;padding: 0em 23em;">
+          <h2>Result</h2>
+          <a id="score"></a>
+          <h1 style="font-size: 50px;">Quiz ended. Thank you</h1>
+        </div>
+        <a href="#results"><button class="submitresult" type="submit">Submit</button></a>
+        </form>
+          <script src="quiz.js"></script>
+        </body>
+        </html>
+        

@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Orbitron:wght@400..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Strait&display=swap');
+*{
+    color: rgb(255, 255, 255);
+    font-family: "Red Hat Display", sans-serif;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+.header-wrapper {
+    max-width: fit-content;
+    position: relative;
+    z-index: 10;
+}
+.menubar {
+    float: left;
+    padding: 63px;
+    width: 13%;
+    left: -1%;
+    top: 0%;
+    height: 85%;
+    z-index: -1;
+    position: fixed;
+    background: #000000;
+    font-weight: 700;
+    border: solid 2px purple;
+}
+
+.menubar a {
+    line-height: 72px;
+    color: gray;
+}
+.start{
+    font-weight: 500;
+    transition: 1s;
+}
+.start img{
+    position: absolute;
+    border-radius: 72%;
+    width: 56%;
+    left: 17%;
+    top: 33%;
+    border: solid 1.5px rgb(255, 255, 255);
+    animation: spin 15s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.menubar i{
+    position: relative;
+    top:0px;
+    left: -7px;
+    color: gray;
+}
+hr{
+    width: -webkit-fill-available;
+    float: inline-end;
+}
+.extra{
+    text-align: center;
+    position: fixed;
+    left: 2%;
+    z-index: 1001;
+    top: 76%;
+    width: 14%;
+    /* border: solid 1px white; */
+    padding: 16px 19px 0px;
+}
+.extra a{
+    color: rgba(255, 255, 255, 0.742);
+    padding: 11px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.extra a:hover{
+    color: white;
+    text-decoration: overline;
+}
+
+::-webkit-scrollbar {
+    display: none;
+} 
+.colors a{
+    padding: 6px 236px;
+    color: white;
+    margin: 20px;
+    white-space: nowrap;
+}
+.colors a:hover{
+    text-decoration: overline;
+}
+ul{
+    position: absolute;
+    left: 24%;
+    top: 45%;
+    width: 68%;
+    background-color: rgba(23, 23, 23, 0.79);
+    padding: 34px 35px;
+    border-radius: 19px;
+    z-index: 2000;
+}
+li{
+    color: rgb(255, 255, 255);
+    margin: -15px;
+    line-height: 84px;
+    padding: 3px 41px;
+}
+#song-list li {
+    position: relative; 
+}
+
+#song-list li .play-button {
+    position: absolute; 
+    left: 93%; 
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+table {
+    width: 75%;
+    position: fixed;
+    top: 53%;
+    left: 23%;
+
+}
+h2{
+    position: fixed;
+    top: 189px;
+    left: 58%;
+}
+tr{
+    color: #ffffff;
+}
+th, td {
+      border: 0px solid #000000;
+      padding: 8px;
+      text-align: center;
+}
+th {
+      background-color: #000000;
+}
+.highlight {
+      background-color: purple;
+      color: white;
+}
+  
+.but1{
+    background: none;
+    border: none;
+    position: fixed;
+    top: -51.5%;
+    left: 26%;
+    font-size: 27px;
+}
+  
+.but2{
+    background: none;
+    border: none;
+    position: fixed;
+    top: -51.5%;
+    left: 91%;
+    font-size: 26px;
+}
+.updates{
+    position: relative;
+    top: 45%;
+    color: white;
+    left: 57%;
+} 
+@media only screen and (max-width: 768px) {
+    body{
+        display: none;
+    }
+
+}
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+    .header-wrapper {
+        max-width: 90%;
+        margin: auto;
+    }
+}
+@media only screen and (min-width: 1201px) {
+    .header-wrapper {
+        max-width: 1501px;
+        margin: auto;    
+    }
+}

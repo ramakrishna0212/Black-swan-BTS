@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Orbitron:wght@400..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Strait&display=swap');
+*{
+    color: rgb(255, 255, 255);
+    font-family: "Red Hat Display", sans-serif;
+    list-style: none;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+.header-wrapper {
+    max-width: fit-content;
+    position: relative;
+    z-index: 10;
+}
+.menubar {
+    float: left;
+    width: 22%;
+    left: -1%;
+    top: -17%;
+    height: 178%;
+    z-index: -28;
+    position: fixed;
+    background: #000000;
+    font-weight: 700;
+    border: solid 2px purple;
+}
+.menubar a {
+    line-height: 72px;
+    color: gray;
+}
+.menubar i{
+    position: relative;
+    top:0px;
+    left: -7px;
+    color: gray;
+}
+hr{
+    width: -webkit-fill-available;
+    float: inline-end;
+}
+.extra{
+    text-align: center;
+    position: fixed;
+    left: 2%;
+    z-index: 5001;
+    top: 7%;
+    width: 14%;
+    padding: 16px 19px 0px;
+}
+.extra a{
+    color: rgba(255, 255, 255, 0.742);
+    padding: 11px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.extra a:hover{
+    color: white;
+    text-decoration: overline;
+}
+.logo{
+    width: 75%;
+    position: fixed;
+    background: black;
+    padding-left: 31%;
+    top: -11%;
+    z-index: 1050;
+    box-shadow: 0 2px 0 0 purple;
+    height: 44%;
+}
+.logo .audiosplayer{
+    position: fixed;
+    top: 22%;
+    left: 86%;
+    z-index: -1000;
+}
+.skip{
+    position: fixed;
+    top: -5em;
+    z-index: 1000;
+}
+button:hover{
+    background-color: purple;
+    color: white;
+}
+
+input{
+    accent-color: rgb(173, 0, 173);
+    position: fixed;
+    top: 76%;
+    left: 8%;
+    cursor: all-scroll;
+    outline: none;
+}
+.button1{
+    background: rgb(255, 255, 255);
+    COLOR: rgb(0, 0, 0);
+    padding: 12px 3%;
+    border-radius: 37px;
+    margin-top: 36.5%;
+    left: 6%;
+    position: fixed;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    float: right;
+}
+.button2{
+    background: rgb(255, 255, 255);
+    COLOR: rgb(0, 0, 0);
+    padding: 13px 3%;
+    border-radius: 37px;
+    margin-top: 41%;
+    left: 1%;
+    position: fixed;
+    cursor: pointer;
+    border: none;
+}
+.button3{
+    background: rgb(255, 255, 255);
+    COLOR: rgb(0, 0, 0);
+    padding: 13px 3%;
+    border-radius: 37px;
+    margin-top: 41%;
+    left: 10%;
+    position: fixed;
+    cursor: pointer;
+    border: none;
+}
+
+.suggestions p{
+    position: fixed;
+    top: 36%;
+    width: 14%;
+    z-index: 10;
+    left: 40px;
+    color: #ffffffc7;
+}
+
+::-webkit-scrollbar {
+    display: none;
+} 
+
+#skip-message {
+    display: none;
+    position: fixed;
+    top: 6%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.824);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    z-index: 100000;
+    font-weight: 700;
+    margin-left: 10%;
+    width: 18%;
+    text-align: center;
+}
+ul{
+    position: absolute;
+    left: 24%;
+    top: 45%;
+    width: 68%;
+    background-color: rgba(23, 23, 23, 0.79);
+    padding: 34px 35px;
+    border-radius: 19px;
+    z-index: -1000;
+}
+li{
+    color: rgb(255, 255, 255);
+    margin: -15px;
+    line-height: 84px;
+    padding: 3px 41px;
+}
+#song-list li {
+    position: relative; 
+}
+
+#song-list li .play-button {
+    position: absolute; 
+    left: 93%; 
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+li:hover{
+    background: purple;
+    padding: 3px 41px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
+li i:hover{
+    color: rgb(0, 0, 0);
+}
+@media only screen and (max-width: 768px) {
+    body{
+        display: none;
+    }
+
+}
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+    .header-wrapper {
+        max-width: 90%;
+        margin: auto;
+    }
+}
+@media only screen and (min-width: 1201px) {
+    .header-wrapper {
+        max-width: 1501px;
+        margin: auto;    
+    }
+}
+
+.dropbtn {
+    background-color: #f1f1f1;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropdown button{
+    position: relative;
+    top: 0em;
+    left: 4em;
+    border: none;
+    background: none;
+    padding: 13px 17px;
+    color: black;
+    outline: none;
+    text-align: center;
+    z-index: 10000;
+    font-size: 17px;
+}
+  
+  .dropbtn:hover, .dropbtn:focus {
+    position: relative;
+    top: 2em;
+    left: 5em;
+    border: none;
+    background-color: #484848;
+    padding: 13px 17px;
+    color: white;
+    outline: none;
+    text-align: center;
+    z-index: 10000;
+  }
+  
+  .dropdown-container {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .dropdown-content {
+    position: fixed;
+    top: 31%;
+    left: 34%;
+    z-index: 1010;
+  }
+  
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 43px;
+    text-decoration: none;
+    display: inline;
+    background-color: #484848;
+    border-radius: 40px;
+    line-height: 112px;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #c6c6c6;
+    border-radius: 40px;
+    color: #000000;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .section {
+    display: none;
+  }
+  .skip P{
+    color: white;
+    position: fixed;
+    top: 609.5px;
+    left: 3%;
+
+  }
+  @media only screen and (max-width: 768px) {
+    body{
+        display: none;
+    }
+
+}
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+    .header-wrapper {
+        max-width: 90%;
+        margin: auto;
+    }
+}
+@media only screen and (min-width: 1201px) {
+    .header-wrapper {
+        max-width: 1200px; 
+        margin: auto;
+    }
+}

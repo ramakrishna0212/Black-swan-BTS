@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACK SWAN BTS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/WBcSJPd/New-Project-A1-A7313.png">
+    <link rel="stylesheet" href="try.css">
+    <script src="D:\Blackswan.bts\songs.js"></script>
+
+</head>
+<body>
+    <div class="header-wrapper">
+         <div class="menubar">
+            <div class="suggestions">
+               <p>Your can suggest any songs that you like to add. Contact with us through the mail.</p>
+            </div>
+         </div>
+    </div>
+    <div class="logo">
+      <img src="https://i.pinimg.com/736x/0d/46/56/0d465622b3a1c766ef59d870344dbb9c.jpg" alt="" width="54%">
+   </div>
+    <div class="dropdown-container">
+        <div class="dropdown">
+           <div class="dropdown-content" id="myDropdown">
+            <a href="#all" onclick="displayText(0)">All</a>
+              <a href="#sad" onclick="displayText(1)">Sad</a>
+              <a href="#happy" onclick="displayText(2)">Happy</a>
+              <a href="#calm" onclick="displayText(3)">Calm</a>
+              <a href="#dance" onclick="displayText(4)">Dance</a>
+              <a href="#study" onclick="displayText(5)">Study</a>
+           </div>
+        </div>
+     </div>
+     <section id="0" class="section" id="all">
+        <div class="audiosplayer">
+            <ul id="song-list" style="z-index: 1000;">
+                <li data-src="D:\Blackswan.bts\mood\calm\song1.mp3">Answer : Love Myself<i class="fa-solid fa-play play-button"></i></li>
+                <li data-src="D:\Blackswan.bts\mood\calm\song2.mp3">Seesaw<i class="fa-solid fa-play play-button"></i></li>
+                <li data-src="D:\Blackswan.bts\mood\calm\song3.mp3">Epiphany<i class="fa-solid fa-play play-button"></i></li>
+                <li data-src="D:\Blackswan.bts\mood\calm\song4.mp3">Magic shop<i class="fa-solid fa-play play-button"></i></li>
+                <li data-src="D:\Blackswan.bts\mood\calm\song5.mp3">Moon<i class="fa-solid fa-play play-button"></i></li>
+                <li data-src="D:\Blackswan.bts\mood\dance\song1.mp3">Idol<i class="fa-solid fa-play play-button"></i></li>
+                <li data-src="D:\Blackswan.bts\mood\dance\song2.mp3">Fire<i class="fa-solid fa-play play-button"></i></li>
+                <li data-src="D:\Blackswan.bts\mood\dance\song3.mp3">Fake love<i class="fa-solid fa-play play-button"></i></li>
+                <li data-src="D:\Blackswan.bts\mood\dance\song4.mp3">Anpanman<i class="fa-solid fa-play play-button"></i></li>
+                <li data-src="D:\Blackswan.bts\mood\dance\song5.mp3">Mic drop<i class="fa-solid fa-play play-button"></i></li>
+                <li data-src="D:\Blackswan.bts\mood\happy\song1.mp3">Dimple<i class="fa-solid fa-play play-button"></i></li>
+                <li data-src="D:\Blackswan.bts\mood\happy\song2.mp3">Pied Piper<i class="fa-solid fa-play play-button"></i></li>
+                <li data-src="D:\Blackswan.bts\mood\happy\song3.mp3">Dynamite<i class="fa-solid fa-play play-button"></i></li>
+                <li data-src="D:\Blackswan.bts\mood\happy\song5.mp3">Make it right<i class="fa-solid fa-play play-button"></i></li>
+                <li data-src="D:\Blackswan.bts\mood\sad\sad1.mp3">We are Bulletproof : the Eternal<i class="fa-solid fa-play play-button"></i></li>
+                <li data-src="D:\Blackswan.bts\mood\sad\sad2.mp3">Young forever<i class="fa-solid fa-play play-button"></i></li>
+                <li data-src="D:\Blackswan.bts\mood\sad\sad3.mp3">The Truth Untold<i class="fa-solid fa-play play-button"></i></li>
+                <li data-src="D:\Blackswan.bts\mood\sad\sad4.mp3">Spring day<i class="fa-solid fa-play play-button"></i></li>
+                <li data-src="D:\Blackswan.bts\mood\sad\sad5.mp3">Blue & Gray<i class="fa-solid fa-play play-button"></i></li>
+            </ul>
+        </div>
+     </section>
+     <section id="1" class="section" id="sad">
+        <div class="audiosplayer">
+           <ul id="song-list" style="z-index: 1000;" >
+              <li data-src="D:\Blackswan.bts\mood\sad\sad1.mp3">We are Bulletproof : the Eternal<i class="fa-solid fa-play play-button"></i></li>
+              <li data-src="D:\Blackswan.bts\mood\sad\sad2.mp3">Young forever<i class="fa-solid fa-play play-button"></i></li>
+              <li data-src="D:\Blackswan.bts\mood\sad\sad3.mp3">The Truth Untold<i class="fa-solid fa-play play-button"></i></li>
+              <li data-src="D:\Blackswan.bts\mood\sad\sad4.mp3">Spring day<i class="fa-solid fa-play play-button"></i></li>
+              <li data-src="D:\Blackswan.bts\mood\sad\sad5.mp3">Blue & Gray<i class="fa-solid fa-play play-button"></i></li>
+           </ul>
+        </div>
+     </section>
+     <section id="2" class="section" id="happy">
+        <div class="audiosplayer">
+           <ul id="song-list" style="z-index: 1000;" >
+              <li data-src="D:\Blackswan.bts\mood\happy\song1.mp3">Dimple<i class="fa-solid fa-play play-button"></i></li>
+              <li data-src="D:\Blackswan.bts\mood\happy\song2.mp3">Pied Piper<i class="fa-solid fa-play play-button"></i></li>
+              <li data-src="D:\Blackswan.bts\mood\happy\song3.mp3">Dynamite<i class="fa-solid fa-play play-button"></i></li>
+              <li data-src="D:\Blackswan.bts\mood\happy\song4.mp3">Anpanman<i class="fa-solid fa-play play-button"></i></li>
+              <li data-src="D:\Blackswan.bts\mood\happy\song5.mp3">Make it right<i class="fa-solid fa-play play-button"></i></li>
+           </ul>
+        </div>
+     </section>
+     <section id="3" class="section" id="calm">
+        <div class="audiosplayer">
+           <ul id="song-list" style="z-index: 1000;" >
+              <li data-src="D:\Blackswan.bts\mood\calm\song1.mp3">Answer : Love Myself<i class="fa-solid fa-play play-button"></i></li>
+              <li data-src="D:\Blackswan.bts\mood\calm\song2.mp3">Seesaw<i class="fa-solid fa-play play-button"></i></li>
+              <li data-src="D:\Blackswan.bts\mood\calm\song3.mp3">Epiphany<i class="fa-solid fa-play play-button"></i></li>
+              <li data-src="D:\Blackswan.bts\mood\calm\song4.mp3">Magic shop<i class="fa-solid fa-play play-button"></i></li>
+              <li data-src="D:\Blackswan.bts\mood\calm\song5.mp3">Moon<i class="fa-solid fa-play play-button"></i></li>
+           </ul>
+        </div>
+     </section>
+     <section id="4" class="section" id="dance">
+        <div class="audiosplayer">
+           <ul id="song-list" style="z-index: 1000;" >
+              <li data-src="D:\Blackswan.bts\mood\dance\song1.mp3">Idol<i class="fa-solid fa-play play-button"></i></li>
+              <li data-src="D:\Blackswan.bts\mood\dance\song2.mp3">Fire<i class="fa-solid fa-play play-button"></i></li>
+              <li data-src="D:\Blackswan.bts\mood\dance\song3.mp3">Fake love<i class="fa-solid fa-play play-button"></i></li>
+              <li data-src="D:\Blackswan.bts\mood\dance\song4.mp3">Anpanman<i class="fa-solid fa-play play-button"></i></li>
+              <li data-src="D:\Blackswan.bts\mood\dance\song5.mp3">Mic drop<i class="fa-solid fa-play play-button"></i></li>
+           </ul>
+        </div>
+     </section>
+
+     <section id="5" class="section" id="dance">
+        <div class="audiosplayer">
+           <ul id="song-list" style="z-index: 1000;" >
+              <li data-src="D:\Blackswan.bts\mood\study\song1.mp3">Study music 1<i class="fa-solid fa-play play-button"></i></li>
+              <li data-src="D:\Blackswan.bts\mood\study\song2.mp3">Study music 2<i class="fa-solid fa-play play-button"></i></li>
+           </ul>
+        </div>
+     </section>
+     
+      <div class="skip">
+         <P>Volume</P>
+         <input type="range" id="volume-bar" min="0" max="1" step="0.01" value="0.5">
+         <button class="button1" id="play-pause-btn">Play</button>
+         <button class="button2" id="back-btn">&#9668;&#9668;</button>
+         <button class="button3" id="forward-btn">&#9658;&#9658;</button>
+      </div>
+      <div class="extra">
+         <!-- <hr> -->
+         <a>Donate</a>
+         <a href="quiz/1.html"target="_blank">Quiz</a>
+         <p style="color: rgba(255, 255, 255, 0.443);">Contact us :<br> blackswan19ot7@gmail.com</p>
+         <!-- <span style="color: rgba(255, 0, 0, 0.594);">-> New song arrived</span> -->
+     </div>
+        <span id="duration"></span>
+        <div id="skip-message"></div>
+            <script>
+                function toggleDropdown() {
+                    var dropdownContent = document.getElementById("myDropdown");
+                    dropdownContent.classList.toggle("show");
+                }
+                
+                function displayText(sectionId) {
+                    var sections = document.getElementsByClassName("section");
+                    for (var i = 0; i < sections.length; i++) {
+                    sections[i].style.display = "none"; // Hide all sections
+                    }
+                    document.getElementById(sectionId).style.display = "block"; // Show selected section
+                }
+
+            </script>
+               
+</body>
+</html>

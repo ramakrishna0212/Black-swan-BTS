@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="em">
+<head>
+    <script src="https://kit.fontawesome.com/6704942071.js" crossorigin="anonymous"></script>
+    <title>BLACK SWAN BTS</title>
+   <link rel="icon" type="image/x-icon" href="https://i.ibb.co/WBcSJPd/New-Project-A1-A7313.png">
+    <script src="images.js" defer></script>
+    <link rel="stylesheet" href="lock.css">
+</head>
+<body>
+        <div class="main-header">
+            <div class="timedate">
+                <p id="datetime" style="color: rgba(255, 255, 255, 0.868)"></p>
+            </div>
+            <script>
+                function updateTime() {
+                    var today = new Date();
+                    var options = { 
+                        day: 'numeric',
+                        month: 'short',
+                        weekday: 'short',
+                        hour: 'numeric',
+                        minute: 'numeric',
+                        second: 'numeric',
+                        hour12: true 
+                    };
+                    var dateTime = today.toLocaleDateString(undefined, options);
+                    document.getElementById('datetime').innerText = dateTime;
+                }
+                setInterval(updateTime, 1000);
+                updateTime();
+            </script>
+             <div class="koreatime">
+                Korean now :<p id="datetimes" style="color: rgb(169, 169, 169)"></p>
+            </div>
+            <script>
+                function updateTime() {
+                    var today = new Date();
+                    var options = { 
+                        day: 'numeric',
+                        month: 'short',
+                        weekday: 'short',
+                        hour: 'numeric',
+                        minute: 'numeric',
+                        hour12: true, 
+                        timeZone: 'Asia/Seoul' 
+                    };
+                    var dateTime = today.toLocaleDateString(undefined, options);
+                    document.getElementById('datetimes').innerText = dateTime;
+                }
+                setInterval(updateTime, 1000);
+                updateTime();
+            </script>
+            
+            <form>
+                <div class="upload">
+                    <input type="file" id="add" multiple>
+                    <button id="save">CHANGE WALLPAPER</button>
+                    <ul class="todoss">
+                    </ul>
+                </div>
+            </form>
+        </div>
+    <script src="lock.js"></script>
+
+    </script>
+    <div class="header-wrapper">
+        <a style="position: fixed;">BLACK SWAN BTS</a><br>
+        <div class="menubar">
+            <a style="color: white;"><i class="fa-solid fa-house"style="color: white;"></i>Home</a><br>
+            <a href="D:\Blackswan.bts\mood\songs.html"><i class="fa-solid fa-music"></i>Songs</a><br>
+            <a href="calender.html"><i class="fa-regular fa-calendar-days"></i>Calender</a><br>
+        </div>
+    </div>
+    <div class="extra">
+        <hr>
+        <a>Donate</a>
+        <a href="quiz/1.html"target="_blank">Quiz</a>
+        <p style="color: rgba(255, 255, 255, 0.443);">Contact us :<br> blackswan19ot7@gmail.com</p>
+        <!-- <span style="color: rgba(255, 0, 0, 0.594);">-> New song arrived</span> -->
+    </div>
+</body>
+</html>

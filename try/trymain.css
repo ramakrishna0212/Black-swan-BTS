@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Orbitron:wght@400..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Strait&display=swap');
+*{
+    color: white;
+    font-family: "Red Hat Display", sans-serif;
+    list-style: none;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+li{
+    position: fixed;
+    top: 50%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+}
+a{
+    text-decoration: none;
+}
+input{
+    border: none;
+    font-size: 10px;
+    margin-left: 12em;
+    position: fixed;
+    z-index: 101;
+    top: 62%;
+}
+
+.header-wrapper {
+    max-width: fit-content;
+    position: fixed;
+}
+.menubar {
+    float: left;
+    padding: 63px;
+    width: 13%;
+    left: -1%;
+    top: 0%;
+    height: 85%;
+    border: solid 1px black;
+    z-index: -1;
+    position: fixed;
+    background: #000000;
+    font-weight: 700;
+    border: solid 2px purple;
+}
+
+.menubar a {
+    line-height: 72px;
+    color: gray;
+}
+.locksave{
+    color: rgba(255, 255, 255, 0.856);
+    border: none;
+    font-size: 11px;
+    position: fixed;
+    left: 68px;
+    background: none;
+    top: 66%;
+    text-align: center;
+}
+form{
+    position: fixed;
+    top: 29.3em;
+    left: -4%;
+}
+.menubar i{
+    position: relative;
+    top: 0px;
+    left: -7px;
+    color: gray;
+}
+.timedate{
+    font-size: 37px;
+    position: fixed;
+    left: 45.5%;
+    z-index: 1001;
+    font-weight: 400;
+}
+.koreatime{
+    font-size: 18px;
+    position: fixed;
+    left: 3.5%;
+    z-index: 1501;
+    font-weight: 600;
+    top: 18.2em;
+    color: rgba(255, 255, 255, 0.747);
+}
+.songslist{
+    background-color: purple;
+    width: 79%;
+    height: 883px;
+    position: relative;
+    left: 21%;
+    border-radius: 23px;
+    top: -25px;
+    z-index: 1;
+}
+hr{
+    width: -webkit-fill-available;
+    float: inline-end;
+}
+.extra{
+    text-align: center;
+    position: fixed;
+    left: 2%;
+    z-index: 1001;
+    top: 76%;
+    width: 14%;
+    /* border: solid 1px white; */
+    padding: 16px 19px 0px;
+}
+.extra a{
+    color: rgba(255, 255, 255, 0.742);
+    padding: 11px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.extra a:hover{
+    color: white;
+    text-decoration: overline;
+}
+.section {
+    display: none;
+    padding: 20px;
+}
+.sections{
+
+    position: absolute;
+    top: 14em;
+    left: 8%;
+    z-index: -1;
+}
+.sections img{
+    width: 17%;
+    border-radius: 29px;
+    margin: 28px;
+    position: relative;
+    left: 14%;
+    float: inline-start;
+}
+.explore{
+    display: block;
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 56%;
+    font-size: 25px;
+}
+@media only screen and (max-width: 768px) {
+    body{
+        display: none;
+    }
+
+}
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+    .header-wrapper {
+        max-width: 90%;
+        margin: auto;
+    }
+}
+@media only screen and (min-width: 1201px) {
+    .header-wrapper {
+        position: fixed;
+        max-width: 1200px; 
+        margin: auto;
+    }
+}

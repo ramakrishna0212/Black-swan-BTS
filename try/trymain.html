@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>BLACK SWAN BTS</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <link rel="icon" type="image/x-icon" href="https://i.ibb.co/WBcSJPd/New-Project-A1-A7313.png">
+      <script src="lock.js"></script>
+      <link rel="stylesheet" href="trymain.css">
+        <script>
+            function toggleDropdown() {
+                var dropdownContent = document.getElementById("myDropdown");
+                dropdownContent.classList.toggle("show");
+            }
+            
+            function displayText(sectionId) {
+                var sections = document.getElementsByClassName("section");
+                for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = "none";
+                }
+                document.getElementById(sectionId).style.display = "block";
+            }
+        </script>
+   </head>
+   <body>
+        <div class="dropdown-container">
+            <div class="header-wrapper">
+                <a style="position: fixed;">WORLD OF BTS</a><br>
+                <div class="menubar">
+                    <a href="#main" onclick="displayText(1)"><i class="fa-solid fa-house"></i>Home</a><br>
+                    <a href="#updates" onclick="displayText(2)"><i class="fa-brands fa-medium"></i>Updates</a><br>
+                    <a href="#wallpapers" onclick="displayText(3)"><i class="fa-regular fa-image"></i>Wallpapers</a><br>
+                </div>
+            </div>
+            <div class="extra">
+                <hr>
+                <a>Donate</a>
+                <a href="quiz/1.html"target="_blank">Quiz</a>
+                <p style="color: rgba(255, 255, 255, 0.443);">Contact us :<br> blackswan19ot7@gmail.com</p>
+                <!-- <span style="color: rgba(255, 0, 0, 0.594);">-> New song arrived</span> -->
+            </div>
+        </div>
+
+        <section id="1" class="section" id="main">
+            <div class="main-header">
+                <div class="timedate">
+                    <p id="datetime" style="color: rgba(255, 255, 255, 0.868)"></p>
+                </div>
+                <script>
+                    function updateTime() {
+                        var today = new Date();
+                        var options = { 
+                            day: 'numeric',
+                            month: 'short',
+                            weekday: 'short',
+                            hour: 'numeric',
+                            minute: 'numeric',
+                            second: 'numeric',
+                            hour12: true 
+                        };
+                        var dateTime = today.toLocaleDateString(undefined, options);
+                        document.getElementById('datetime').innerText = dateTime;
+                    }
+                    setInterval(updateTime, 1000);
+                    updateTime();
+                </script>
+                <div class="koreatime">
+                    Korean now :<p id="datetimes" style="color: rgb(169, 169, 169)"></p>
+                </div>
+                <script>
+                    function updateTime() {
+                        var today = new Date();
+                        var options = { 
+                            day: 'numeric',
+                            month: 'short',
+                            weekday: 'short',
+                            hour: 'numeric',
+                            minute: 'numeric',
+                            
+                            hour12: true, 
+                            timeZone: 'Asia/Seoul' 
+                        };
+                        var dateTime = today.toLocaleDateString(undefined, options);
+                        document.getElementById('datetimes').innerText = dateTime;
+                    }
+                    setInterval(updateTime, 1000);
+                    updateTime();
+                </script>
+            
+                <form>
+                    <div class="upload">
+                        <input type="file" id="add" multiple>
+                        <button class="locksave" id="save">CHANGE WALLPAPER</button>
+                        <ul class="todos">
+                            <li><img src="D:\Blackswan.bts\img1.jpg" alt="" width="85%"></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+      </section>
+
+
+      <section id="2" class="section" id="Updates">
+            <div class="explore">
+                <a href="">BTS Updates</a>
+            </div>
+      </section>
+      
+      <section id="3" class="section" id="wallpapers">
+
+      </section>
+
+      <section id="4" class="section" id="dance">
+         
+      </section>
+
+      <section id="5" class="section" id="dance">
+
+      </section>
+   </body>
+</html>

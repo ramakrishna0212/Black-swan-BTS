@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACK SWAN BTS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/WBcSJPd/New-Project-A1-A7313.png">
+    <link rel="stylesheet" href="calender.css">
+</head>
+<body>
+  <div class="home">
+    <a href="D:\Blackswan.bts\lockscreen.html">HOME</a>
+ </div>
+    <div class="header-wrapper">
+        <a style="position: fixed;">BLACK SWAN BTS</a><br>
+        <div class="menubar">
+          <a href="lockscreen.html"><i class="fa-solid fa-house"></i>Home</a><br>
+          <a href="D:\Blackswan.bts\mood\songs.html"><i class="fa-solid fa-music"></i>Songs</a><br>
+          <a style="color: white;"><i class="fa-regular fa-calendar-days" style="color: white;"></i>Calender</a><br>
+          <a href="D:\Blackswan.bts\updates.html"><i class="fa-brands fa-medium"></i>Updates</a><br>
+          <a href="D:\Blackswan.bts\wallpaper\members.html"><i class="fa-regular fa-image"></i>Wallpapers</a><br>
+       </div>
+    </div>
+    <div class="logo">
+        <img src="https://i.pinimg.com/736x/0d/46/56/0d465622b3a1c766ef59d870344dbb9c.jpg" alt="" width="54%">
+    </div>
+    <div class="audiosplayer">
+        <div class="calender">
+          <h2 id="monthAndYear"></h2>
+          <table class="table" id="calendar">
+            <thead>
+              <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+              </tr>
+            </thead>
+            <tbody id="calendar-body">
+            </tbody>
+          </table>
+        </div>
+    </div>
+<script>
+  let today = new Date();
+  let currentMonth = today.getMonth();
+  let currentYear = today.getFullYear();
+  let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+  function generateCalendar(month, year) {
+    let calendarBody = document.getElementById("calendar-body");
+    calendarBody.innerHTML = "";
+    let date = new Date(year, month, 1);
+    let firstDay = date.getDay();
+    let daysInMonth = new Date(year, month + 1, 0).getDate();
+
+    document.getElementById("monthAndYear").innerText = months[month] + ' ' + year;
+
+    let dayCount = 1;
+    for (let i = 0; i < 6; i++) {
+      let row = document.createElement("tr");
+      for (let j = 0; j < 7; j++) {
+        if (i === 0 && j < firstDay) {
+          let cell = document.createElement("td");
+          let cellText = document.createTextNode("");
+          cell.appendChild(cellText);
+          row.appendChild(cell);
+        } else if (dayCount > daysInMonth) {
+          break;
+        } else {
+          let cell = document.createElement("td");
+          let cellText = document.createTextNode(dayCount);
+          if (dayCount === today.getDate() && year === today.getFullYear() && month === today.getMonth()) {
+            cell.classList.add("highlight");
+          }
+          cell.appendChild(cellText);
+          row.appendChild(cell);
+          dayCount++;
+        }
+      }
+      calendarBody.appendChild(row);
+    }
+  }
+
+  generateCalendar(currentMonth, currentYear);
+
+  function previous() {
+    currentYear = (currentMonth === 0) ? currentYear - 1 : currentYear;
+    currentMonth = (currentMonth === 0) ? 11 : currentMonth - 1;
+    generateCalendar(currentMonth, currentYear);
+  }
+
+  function next() {
+    currentYear = (currentMonth === 11) ? currentYear + 1 : currentYear;
+    currentMonth = (currentMonth + 1) % 12;
+    generateCalendar(currentMonth, currentYear);
+  }
+</script>
+
+<button class="but1" onclick="previous()"><i class="fa-solid fa-angle-left"></i></button>
+<button class="but2" onclick="next()">  <i class="fa-solid fa-angle-left fa-flip-horizontal"></i></button>
+
+</body>
+</html>
+
+        <div class="extra">
+            <hr>
+            <a>Donate</a>
+            <a href="us.html">Quiz</a>
+            <p style="color: rgba(255, 255, 255, 0.443);">Contact us :<br> blackswan19ot7@gmail.com</p>
+            <!-- <span style="color: rgba(255, 0, 0, 0.594);">-> New song arrived</span> -->
+        </div>
+</body>
+</html>

@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Orbitron:wght@400..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Strait&display=swap');
+*{
+    color: rgb(255, 255, 255);
+    font-family: "Red Hat Display", sans-serif;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+.header-wrapper {
+    max-width: fit-content;
+    position: relative;
+    z-index: 10;
+}
+.logo{
+    width: 70%;
+    position: fixed;
+    background: black;
+    padding-left: 43%;
+    top: -11%;
+    box-shadow: 0 2px 0 0 purple;
+    height: 44%;
+}
+.menubar {
+    float: left;
+    padding: 63px;
+    width: 13%;
+    left: -1%;
+    top: 0%;
+    height: 85%;
+    z-index: -1;
+    position: fixed;
+    background: #000000;
+    font-weight: 700;
+    border: solid 2px purple;
+}
+
+.menubar a {
+    line-height: 72px;
+    color: gray;
+}
+.start{
+    font-weight: 500;
+    transition: 1s;
+}
+.start img{
+    position: absolute;
+    border-radius: 72%;
+    width: 56%;
+    left: 17%;
+    top: 33%;
+    border: solid 1.5px rgb(255, 255, 255);
+    animation: spin 15s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.menubar i{
+    position: relative;
+    top:0px;
+    left: -7px;
+    color: gray;
+}
+hr{
+    width: -webkit-fill-available;
+    float: inline-end;
+}
+.extra{
+    text-align: center;
+    position: fixed;
+    left: 2%;
+    z-index: 1001;
+    top: 76%;
+    width: 14%;
+    /* border: solid 1px white; */
+    padding: 16px 19px 0px;
+}
+.extra a{
+    color: rgba(255, 255, 255, 0.742);
+    padding: 11px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.extra a:hover{
+    color: white;
+    text-decoration: overline;
+}
+
+::-webkit-scrollbar {
+    display: none;
+} 
+.colors a{
+    padding: 6px 236px;
+    color: white;
+    margin: 20px;
+    white-space: nowrap;
+}
+.colors a:hover{
+    text-decoration: overline;
+}
+ul{
+    position: absolute;
+    left: 24%;
+    top: 45%;
+    width: 68%;
+    background-color: rgba(23, 23, 23, 0.79);
+    padding: 34px 35px;
+    border-radius: 19px;
+    z-index: 2000;
+}
+li{
+    color: rgb(255, 255, 255);
+    margin: -15px;
+    line-height: 84px;
+    padding: 3px 41px;
+}
+#song-list li {
+    position: relative; 
+}
+
+#song-list li .play-button {
+    position: absolute; 
+    left: 93%; 
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+table {
+    width: 75%;
+    position: fixed;
+    top: 53%;
+    left: 23%;
+
+}
+h2{
+    position: fixed;
+    top: 189px;
+    left: 58%;
+}
+tr{
+    color: #ffffff;
+}
+th, td {
+      border: 0px solid #000000;
+      padding: 8px;
+      text-align: center;
+}
+th {
+      background-color: #000000;
+}
+.highlight {
+      background-color: purple;
+      color: white;
+}
+button{
+    background: rgb(255, 255, 255);
+    COLOR: rgb(0, 0, 0);
+    padding: 12px 3%;
+    border-radius: 37px;
+    margin-top: 36.5%;
+    left: 6%;
+    position: fixed;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    float: right;
+}
+.but1{
+    background: none;
+    border: none;
+    position: fixed;
+    top: -51.5%;
+    left: 26%;
+    font-size: 27px;
+}
+  
+.but2{
+    background: none;
+    border: none;
+    position: fixed;
+    top: -51.5%;
+    left: 91%;
+    font-size: 26px;
+}
+.updates{
+    position: relative;
+    top: 45%;
+    color: white;
+    left: 57%;
+}
+.home{
+    position: fixed;
+    top: 4%;
+    left: 8%;    
+}
+@media only screen and (max-device-width: 480px){
+    .extra{
+        display: none;
+    }
+    .home{
+        position: fixed;
+        top: 4%;
+        left: 8%;    
+    }
+    button{
+        color: rgba(255, 255, 255, 0.856);
+        border: none;
+        font-size: 27px;
+        position: fixed;
+        z-index: 10;
+        left: 70px;
+        background: none;
+        top: 80%;
+        text-align: center;
+    }
+    .logo{
+        position: fixed;
+        top: -5%;
+        width: 214%;
+        left: -48%;
+        background: black;
+    }
+    h2{
+        position: fixed;
+        top: 189px;
+        left: 34%;
+    }
+    .table{
+        width: 75%;
+        position: fixed;
+        top: 53%;
+        left: 8%;    
+    }
+    .menubar{
+        display: none;
+    }
+    .dropdown-content a{
+        text-decoration: none;
+        display: flex;
+        background: none;
+        border-radius: 40px;
+        line-height: 12px;
+        position: relative;
+        top: 3em;
+        left: -95%;  
+        display: none;  
+    }
+    .one{
+        display: block;
+        position: relative;
+        top: 0em;    
+    }
+    .dropdown-container a:hover{
+        background:none;
+        color: #ffffff;
+        line-height: 12px;
+    }
+    .skip input{
+        position: fixed;
+        top: 81%;
+        width: 19%;
+    }
+    ul{
+        position: absolute;
+        left: 6%;
+        top: 45%;
+        width: 69%;
+        background-color: rgba(23, 23, 23, 0.79);
+        padding: 22px 35px;
+        border-radius: 19px;
+        font-size: 13px;
+        padding-bottom: 35%;
+    }
+    
+    #song-list li .play-button{
+        position: absolute;
+        left: 83%;
+        top: 50%;
+    }
+    .but1{
+        padding: 10px 10%;
+        border-radius: 37px;
+        margin-top: 157.5%;
+        left: 2%;    
+        position: fixed;
+        font-size: 16px;
+    }
+    .but2{
+        padding: 13px 10%;
+        border-radius: 37px;
+        margin-top: 156.5%;
+        left: 74%;    
+        position: fixed;
+        font-size: 14px;
+    }
+    .skip p{
+        display: none;
+    }
+    .home{
+        position: fixed;
+        top: 43%;
+        left: 5%;
+        z-index: 10000000000;   
+    }
+}
